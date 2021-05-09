@@ -1,0 +1,7 @@
+/dist
+/node_modules
+npm-error.log*
+yarn-error.log*
+.DS_Store
+package-lock.json
+*.bak

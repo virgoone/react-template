@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="index">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>Index</title>
+    <% if (APP_ENV === 'production') { %>
+      <link rel="preload" href="https://cdn.staticfile.org/react/16.13.0/umd/react.production.min.js" as="script" crossorigin>
+      <link rel="preload" href="https://cdn.staticfile.org/react-dom/16.13.0/umd/react-dom.production.min.js" as="script" crossorigin>
+    <% } %>
+    
+    <script type="text/javascript">
+      // Promise polyfill
+      window.Promise || document.write('<script src="https://cdn.staticfile.org/es6-promise/4.1.1/es6-promise.min.js"><\/script>')
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>Sorry, we need js to run correctly!</noscript>
+    <% if(APP_ENV === 'production') { %>
+      <script src="https://cdn.staticfile.org/react/16.13.0/umd/react.production.min.js" crossorigin></script>
+      <script src="https://cdn.staticfile.org/react-dom/16.13.0/umd/react-dom.production.min.js" crossorigin></script>
+    <% } %>
+  </body>
+</html>
