@@ -1,7 +1,7 @@
 {
-  "name": "ipic",
-  "version": "0.0.1",
-  "description": "一个图床",
+  "name": "react-template",
+  "version": "1.0.0",
+  "description": "react project template",
   "author": "<me@virgo.one>",
   "scripts": {
     "start": "node ./scripts/start.js",
