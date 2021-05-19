@@ -143,7 +143,6 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: appHtml,
-      inject: __DEV__ ? 'body' : 'head',
       minify,
     }),
     new webpack.DefinePlugin(stringified),
